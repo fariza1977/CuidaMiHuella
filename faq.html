@@ -52,7 +52,7 @@
         .faq-item:last-child { border-bottom: none; }
         .faq-button { width: 100%; text-align: left; padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
         .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .faq-content p { padding-bottom: 1.5rem; color: #4b5563; }
+        .faq-content p { padding-bottom: 1.5rem; color: #4b5563; line-height: 1.6; }
         .rotate-180 { transform: rotate(180deg); }
         
         /* Footer Sólido */
@@ -103,24 +103,26 @@
             
             <!-- Cabecera de Sección -->
             <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-violet-900 mb-6 drop-shadow-sm">Preguntas Frecuentes</h1>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-violet-900 mb-6 drop-shadow-sm">Preguntas Frecuentes (FAQ)</h1>
                 <p class="max-w-2xl mx-auto text-lg text-gray-700 font-medium">Todo lo que necesitas saber sobre cómo estamos revolucionando la adopción y el cuidado animal.</p>
             </div>
 
             <!-- Contenedor FAQ -->
-            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-8 border border-violet-100">
+            <div class="max-w-4xl mx-auto bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 md:p-10 border border-violet-100">
                 
                 <!-- Categoría: Sobre la Plataforma -->
-                <div class="mb-8">
-                    <h2 class="text-xl font-bold text-violet-600 mb-4 flex items-center"><i class="fas fa-info-circle mr-2"></i> Sobre CuidaMiHuella</h2>
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-violet-800 mb-4 flex items-center border-b-2 border-violet-100 pb-2">
+                        <i class="fas fa-info-circle mr-3 text-violet-500"></i> Sobre CuidaMiHuella
+                    </h2>
                     
                     <div class="faq-item">
                         <button class="faq-button">
-                            <span class="text-lg font-semibold text-gray-800">¿Qué es exactamente CuidaMiHuella? ¿Sois una protectora?</span>
+                            <span class="text-lg font-semibold text-gray-800">¿Qué es exactamente CuidaMiHuella?</span>
                             <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
                         </button>
                         <div class="faq-content">
-                            <p>No somos una protectora, somos el <strong>primer Club de Tenencia Responsable</strong>. Piensa en nosotros como el "RACE o RACC" de los animales. Somos una infraestructura de apoyo que conecta a protectoras, adoptantes y dueños para garantizar adopciones seguras y ofrecer servicios (seguros, descuentos, formación) durante toda la vida del animal.</p>
+                            <p>No somos una simple web de adopción, somos el <strong>"RACE/RACC de los animales"</strong>. CuidaMiHuella es un club de tenencia responsable que ofrece una infraestructura de apoyo para dueños de mascotas. Transformamos el sector fragmentado y de riesgo actual en un ecosistema de confianza, seguridad y comunidad, garantizando que cada hogar sea un hogar para siempre.</p>
                         </div>
                     </div>
 
@@ -130,14 +132,26 @@
                             <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
                         </button>
                         <div class="faq-content">
-                            <p>Es nuestra innovación principal. Dejamos de tratar la adopción como un acto único y arriesgado para convertirla en un proceso guiado. A través de nuestra "Experiencia de Acogida", transformamos la incertidumbre en seguridad, acompañándote antes, durante y después de la adopción.</p>
+                            <p>Es nuestra innovación fundamental. Dejamos de tratar la adopción como una transacción única y de alto riesgo para convertirla en un proceso guiado y seguro. A través de la "Experiencia de Acogida Pre-Adoptiva", eliminamos el miedo y la incertidumbre, permitiendo validar la compatibilidad entre familia y animal antes de un compromiso de por vida.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-button">
+                            <span class="text-lg font-semibold text-gray-800">¿Qué problema solucionáis?</span>
+                            <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Atacamos tres fracturas clave: el miedo del adoptante a equivocarse, el agotamiento de las protectoras por "turistas de perrera" y devoluciones, y la soledad del dueño al carecer de una red de apoyo fiable.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Categoría: Funcionamiento y Adopción -->
-                <div class="mb-8">
-                    <h2 class="text-xl font-bold text-violet-600 mb-4 flex items-center"><i class="fas fa-paw mr-2"></i> Adopciones y Funcionamiento</h2>
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-violet-800 mb-4 flex items-center border-b-2 border-violet-100 pb-2">
+                        <i class="fas fa-paw mr-3 text-violet-500"></i> Cómo Adoptar
+                    </h2>
                     
                     <div class="faq-item">
                         <button class="faq-button">
@@ -145,7 +159,7 @@
                             <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
                         </button>
                         <div class="faq-content">
-                            <p>Es un periodo de convivencia de 3 semanas en tu casa antes de firmar la adopción definitiva. Durante este tiempo, tú y el animal estáis cubiertos por nuestro seguro. El objetivo no es "probar al animal", sino validar que sois compatibles en un entorno real y sin riesgos.</p>
+                            <p>Es un periodo de convivencia definido y contractual (normalmente <strong>3 semanas</strong>) en tu hogar con un animal de protectora. Durante este tiempo, cuentas con nuestro "Pack de Bienvenida y Tranquilidad Total" que incluye seguro de RC y Accidentes. El objetivo es que te "pruebes" a ti mismo como dueño y valides la compatibilidad en un entorno real.</p>
                         </div>
                     </div>
 
@@ -155,24 +169,26 @@
                             <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
                         </button>
                         <div class="faq-content">
-                            <p>No pasa nada, y no es un fracaso. Es un éxito de información. El animal vuelve a la protectora (o a otra acogida) con datos valiosos sobre su comportamiento, y nosotros usamos esa información para proponerte un "segundo match" mucho más afin a tu estilo de vida.</p>
+                            <p>No pasa nada, y no es un fracaso. Es un éxito de recopilación de datos. Si la adopción no se formaliza, recogemos información valiosa sobre el animal para proponer un <strong>segundo "match" inteligente</strong> con una probabilidad de éxito altísima. Transformamos la devolución en una etapa lógica del proceso.</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-button">
-                            <span class="text-lg font-semibold text-gray-800">¿Qué animales puedo adoptar?</span>
+                            <span class="text-lg font-semibold text-gray-800">¿Qué animales se pueden adoptar?</span>
                             <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
                         </button>
                         <div class="faq-content">
-                            <p>Principalmente perros y gatos procedentes de nuestra red de protectoras aliadas (inicialmente en Euskadi). Son animales que han pasado un filtro sanitario y de los que tenemos información suficiente para buscarles el hogar perfecto.</p>
+                            <p>Inicialmente nos centramos en <strong>perros y gatos</strong>, que representan el 95% del mercado. Sin embargo, CuidaMiHuella está diseñado para ser una plataforma multi-especie, y a partir del tercer año planeamos expandirnos a nuevos animales de compañía como hurones, conejos y cobayas.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Categoría: Precios y Membresía -->
-                <div class="mb-8">
-                    <h2 class="text-xl font-bold text-violet-600 mb-4 flex items-center"><i class="fas fa-euro-sign mr-2"></i> Precios y Club</h2>
+                <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-violet-800 mb-4 flex items-center border-b-2 border-violet-100 pb-2">
+                        <i class="fas fa-euro-sign mr-3 text-violet-500"></i> Precios y Club
+                    </h2>
 
                     <div class="faq-item">
                         <button class="faq-button">
@@ -180,41 +196,69 @@
                             <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
                         </button>
                         <div class="faq-content">
-                            <p>No estás pagando por el animal (la vida no tiene precio). Estás adquiriendo nuestro <strong>"Pack de Bienvenida y Tranquilidad Total"</strong> que te convierte en "Socio Fundador". Incluye: Seguro de Responsabilidad Civil y Accidentes, desparasitación, kit de bienvenida, gestión administrativa y un <strong>donativo directo de 20€ a la protectora</strong>.</p>
+                            <p>Este pago corresponde al <strong>"Pack de Bienvenida Llave en Mano"</strong> para nuevos "Socios Fundadores". No es por el animal, sino por la seguridad y los servicios. Cubre costes directos como el seguro de RC y Accidentes, la desparasitación al día, un kit de salida y un <strong>donativo directo a la protectora</strong>. Es una inversión en tranquilidad y responsabilidad.</p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <button class="faq-button">
-                            <span class="text-lg font-semibold text-gray-800">Ya tengo mascota, ¿puedo unirme?</span>
+                            <span class="text-lg font-semibold text-gray-800">Ya tengo mascota, ¿puedo unirme al Club?</span>
                             <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
                         </button>
                         <div class="faq-content">
-                            <p>¡Sí! Puedes unirte como <strong>"Socio Amigo"</strong> por 39,90€ al año. Esto te da acceso a nuestra red de descuentos, foros con expertos, la "Cadena de Favores" y, lo más importante, incluye el <strong>Seguro de Responsabilidad Civil obligatorio</strong> por ley para tu mascota.</p>
+                            <p>¡Sí! Puedes unirte como <strong>"Socio Amigo"</strong> por una cuota anual de <strong>39,90€</strong>. Esta membresía te da acceso al ecosistema: red de descuentos, foros con expertos y, muy importante, incluye el <strong>Seguro de Responsabilidad Civil obligatorio</strong> por ley.</p>
                         </div>
                     </div>
-
+                    
+                    <div class="faq-item">
+                        <button class="faq-button">
+                            <span class="text-lg font-semibold text-gray-800">¿Hay cuotas de renovación?</span>
+                            <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Sí, a partir del segundo año, todos los socios pagan una cuota de renovación reducida de <strong>29,90€</strong> anuales. Esta cuota justifica su valor al incluir el mantenimiento del seguro de RC obligatorio y el acceso continuado a todos los beneficios del Club.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!-- Categoría: Comunidad y Servicios -->
+                 <div class="mb-10">
+                    <h2 class="text-2xl font-bold text-violet-800 mb-4 flex items-center border-b-2 border-violet-100 pb-2">
+                        <i class="fas fa-users mr-3 text-violet-500"></i> Comunidad y Servicios
+                    </h2>
                      <div class="faq-item">
                         <button class="faq-button">
                             <span class="text-lg font-semibold text-gray-800">¿Qué es la "Cadena de Favores"?</span>
                             <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
                         </button>
                         <div class="faq-content">
-                            <p>Es nuestra red exclusiva de apoyo mutuo. Socios verificados que se ayudan entre sí (por ejemplo, paseando al perro de otro si está enfermo o cuidándolo un fin de semana) de forma gratuita o simbólica, recuperando el sentido de comunidad y vecindad.</p>
+                            <p>Es uno de nuestros beneficios más exclusivos. Se trata de una red de apoyo mutuo y gratuito para cuidados puntuales entre socios. Para acceder, se requiere pasar un proceso de "Verificación Avanzada". Fomenta la reciprocidad ("hoy por ti, mañana por mí") y es algo que plataformas puramente transaccionales no pueden ofrecer.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-button">
+                            <span class="text-lg font-semibold text-gray-800">¿Qué otros servicios ofrece el Club?</span>
+                            <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Ofrecemos tres pilares de valor: <strong>Ahorro y Confianza</strong> (descuentos, seguro RC), <strong>Conocimiento y Tranquilidad</strong> (foro de profesionales, Academia CuidaMiHuella, Diario de Bienestar) y <strong>Comunidad y Pertenencia</strong> (foros de socios, quedadas, Cadena de Favores). También contamos con un marketplace de cuidadores de confianza.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Categoría: Para Protectoras -->
                 <div>
-                    <h2 class="text-xl font-bold text-violet-600 mb-4 flex items-center"><i class="fas fa-hand-holding-heart mr-2"></i> Para Protectoras</h2>
+                    <h2 class="text-2xl font-bold text-violet-800 mb-4 flex items-center border-b-2 border-violet-100 pb-2">
+                        <i class="fas fa-hand-holding-heart mr-3 text-violet-500"></i> Para Protectoras
+                    </h2>
                     <div class="faq-item">
                         <button class="faq-button">
-                            <span class="text-lg font-semibold text-gray-800">Soy una protectora, ¿cuánto me cuesta unirme?</span>
+                            <span class="text-lg font-semibold text-gray-800">Soy una protectora, ¿cuánto me cuesta?</span>
                             <i class="fas fa-chevron-down text-violet-400 transition-transform duration-300"></i>
                         </button>
                         <div class="faq-content">
-                            <p><strong>Cero euros.</strong> Para las protectoras el servicio es totalmente gratuito. De hecho, es una fuente de ingresos: recibís un donativo por cada animal adoptado a través de nuestro sistema, además de ahorrar tiempo de gestión y reducir las devoluciones.</p>
+                            <p><strong>Absolutamente nada.</strong> Para las protectoras el servicio es gratuito. De hecho, es una fuente de ingresos: recibís un donativo económico directo por cada animal adoptado a través de nuestra plataforma. Además, ahorráis tiempo de gestión al recibir candidatos ya filtrados y reducis drásticamente las devoluciones traumáticas.</p>
                         </div>
                     </div>
                 </div>
@@ -222,51 +266,25 @@
             </div>
 
              <div class="text-center mt-12">
-                <p class="text-gray-700 mb-4">¿Tienes más preguntas?</p>
-                <a href="contacto.html" class="inline-block bg-violet-600 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-violet-700 transition">Contactar con Nosotros</a>
+                <p class="text-gray-700 mb-4">¿Tienes alguna duda más específica?</p>
+                <a href="contacto.html" class="inline-block bg-violet-600 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-violet-700 transition transform hover:-translate-y-1">Contactar con Nosotros</a>
             </div>
 
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="text-gray-700 border-t border-gray-200">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8 text-left">
-                <div>
-                    <h3 class="font-bold text-violet-800 mb-4">CuidaMiHuella</h3>
-                    <p class="text-sm mb-4">Cuidamos de su huella.</p>
-                    <div class="flex space-x-4 text-xl text-violet-600">
-                        <i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="font-bold text-violet-800 mb-4 text-sm uppercase">Navegación</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="hover:text-violet-600">Inicio</a></li>
-                        <li><a href="unete-al-club.html" class="hover:text-violet-600">El Club</a></li>
-                        <li><a href="para-protectoras.html" class="hover:text-violet-600">Protectoras</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-violet-800 mb-4 text-sm uppercase">Legal</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="aviso-legal.html" class="hover:text-violet-600">Aviso Legal</a></li>
-                        <li><a href="politica-de-privacidad.html" class="hover:text-violet-600">Privacidad</a></li>
-                        <li><a href="politica-de-cookies.html" class="hover:text-violet-600">Cookies</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="font-bold text-violet-800 mb-4 text-sm uppercase">Ayuda</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="contacto.html" class="hover:text-violet-600">Contacto</a></li>
-                        <li><a href="#" class="text-violet-600 font-bold">FAQ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-violet-200 pt-6 text-xs">
-                © 2025 CuidaMiHuella. Todos los derechos reservados.
-            </div>
+    <!-- Footer Simplificado -->
+    <footer id="footer" class="py-8 text-center text-gray-600 border-t">
+        <div class="container mx-auto px-4">
+             <p class="mb-4 font-bold text-violet-800 text-lg">CuidaMiHuella</p>
+             <div class="space-x-4 text-sm mb-4 flex justify-center flex-wrap gap-2">
+                <a href="aviso-legal.html" class="hover:text-violet-600 underline">Aviso Legal</a>
+                <span class="text-gray-300">|</span>
+                <a href="politica-de-privacidad.html" class="hover:text-violet-600 underline">Privacidad</a>
+                <span class="text-gray-300">|</span>
+                <a href="politica-de-cookies.html" class="hover:text-violet-600 underline">Cookies</a>
+             </div>
+             <div class="text-xs text-gray-400">© 2025 CuidaMiHuella. Todos los derechos reservados.</div>
         </div>
     </footer>
 
@@ -288,8 +306,12 @@
                     icon.classList.remove('rotate-180');
                 } else {
                     // Cerrar otros (opcional, para efecto acordeón estricto)
-                    document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = null);
-                    document.querySelectorAll('.faq-button i').forEach(i => i.classList.remove('rotate-180'));
+                    document.querySelectorAll('.faq-content').forEach(c => {
+                        c.style.maxHeight = null;
+                    });
+                    document.querySelectorAll('.faq-button i').forEach(i => {
+                        i.classList.remove('rotate-180');
+                    });
 
                     content.style.maxHeight = content.scrollHeight + "px";
                     icon.classList.add('rotate-180');
